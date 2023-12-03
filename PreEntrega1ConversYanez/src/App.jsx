@@ -1,11 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 
 import NavBarComponent from "./components/NavBarComponent/NavBarComponent";
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -15,7 +13,10 @@ function App() {
 
   return (
     <>
-      <div><NavBarComponent/></div> 
+      <div style={{width: "100vw", height: "100vh"}}>
+        <NavBarComponent/>
+        <ItemListContainer greeting="¡Bienvenidos!"/>
+      </div> 
     </>
   )
 }
