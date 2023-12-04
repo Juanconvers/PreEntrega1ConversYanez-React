@@ -1,6 +1,6 @@
 const ItemListContainer = (props) => {
   return (
-    <div>{props.greeting}</div>
+    <div style={{fontSize: "2rem", display: "flex", flexFlow: "row", justifyContent: "center", alignItems: "center"}}>{props.greeting}</div>
   )
 }
 
